@@ -747,3 +747,16 @@ footer div {
   left: 180px;
   z-index: -1;
 }
+
+/* -------------------------------- LOGIN -------------------- */
+
+.loginSize {
+  height: 400px;
+  width: 500px;
+}
+
+@media (max-width: 900px) {
+  .loginSize {
+    margin-top: 400px;
+  }
+}
