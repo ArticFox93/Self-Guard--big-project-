@@ -264,12 +264,12 @@
         <div class="bout2 flex rounded">
           <div class="bout3 lato-regular">
             <img src="images/logo test2.png" />
+            <p class="opacity-50">© Pavel Šmída</p>
           </div>
-
           <div class="text-content">
             <h1 class="f-hall fon-60">About</h1>
             <p class="lato-regular test">
-              <b>Self-Guard</b> is website designed for self-improvement. Our
+              <b>Self-Guard</b> is website designed for self-improvement. My
               <b>main goal</b> is to help you track progress, rate films, write
               out daily blogs... and much more! You can find here school tools
               for more consistent learning like pomodoro technique and
@@ -295,9 +295,8 @@
             <div class="form-group text-start form-size">
               <label for="exampleFormControlSelect1">Select options</label>
               <select class="form-control custom-select-size" id="options">
-                <option value="form4" selected>Example</option>
+                <option value="form4" selected>Add simple note</option>
                 <option value="form1">Add book</option>
-                <!-- Default -->
                 <option value="form2">Add film</option>
                 <option value="form3" disabled>Add gym tracking</option>
                 <option value="disabled" disabled>Coming soon...</option>
@@ -305,25 +304,27 @@
             </div>
 
             <!-- Form 1: Add book -->
-            <div id="form1">
-              <div class="input-group my-3">
+            <div id="form1" style="margin-top: -20px">
+              <div class="form-group my-3">
+                <label for="noteTitle">Title of the book</label>
                 <input
+                  id="noteTitle"
                   type="text"
                   class="form-control"
                   placeholder="Input name of the book..."
-                  aria-label="Book name"
-                  aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="input-group my-3">
+
+              <div class="form-group my-3">
+                <label for="noteTitle">Author of the book</label>
                 <input
+                  id="noteTitle"
                   type="text"
                   class="form-control"
-                  placeholder="Input author..."
-                  aria-label="Author name"
-                  aria-describedby="basic-addon1"
+                  placeholder="Input name of the book..."
                 />
               </div>
+
               <div class="form-group my-3">
                 <label for="review">Enter your review</label>
                 <textarea
@@ -333,40 +334,67 @@
                   placeholder="Write your review..."
                 ></textarea>
               </div>
-              <div class="form-group" class="text-start form-size">
-                <label for="exampleFormControlSelect1">Select rating</label>
-                <select
-                  style="width: 120px"
-                  class="form-control custom-select-size"
-                  id="exampleFormControlSelect1"
-                >
-                  <option>One star</option>
-                  <option>Two star</option>
-                  <option>Three star</option>
-                  <option>Four star</option>
-                  <option>Five star</option>
-                </select>
+
+              <div class="d-flex align-items-center">
+                <div class="form-group">
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select rating</label>
+                    <div class="d-flex align-items-center">
+                      <select
+                        style="width: 120px; margin-right: 10px"
+                        class="form-control custom-select-size"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>1 ⭐</option>
+                        <option>2 ⭐</option>
+                        <option>3 ⭐</option>
+                        <option>4 ⭐</option>
+                        <option>5 ⭐</option>
+                        <option>6 ⭐</option>
+                        <option>7 ⭐</option>
+                        <option>8 ⭐</option>
+                        <option>8 ⭐</option>
+                        <option>10 ⭐</option>
+                      </select>
+                      <span>/ 10 ⭐</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="obrazekImage">
+                  <div class="mb-3">
+                    <label for="imageInput" class="form-label"
+                      >Choose an image</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="imageInput"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- Form 2: Add film -->
-            <div id="form2" class="hidden">
-              <div class="input-group my-3">
+            <div id="form2" class="hidden" style="margin-top: -20px">
+              <div class="form-group my-3">
+                <label for="noteTitle">Title of the film</label>
                 <input
+                  id="noteTitle"
                   type="text"
                   class="form-control"
                   placeholder="Input name of the film..."
-                  aria-label="Book name"
-                  aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="input-group my-3">
+              <div class="form-group my-3">
+                <label for="noteTitle">Director of the film</label>
                 <input
+                  id="noteTitle"
                   type="text"
                   class="form-control"
-                  placeholder="Input author..."
-                  aria-label="Author name"
-                  aria-describedby="basic-addon1"
+                  placeholder="Input name of the film..."
                 />
               </div>
               <div class="form-group my-3">
@@ -378,19 +406,43 @@
                   placeholder="Write your review..."
                 ></textarea>
               </div>
-              <div class="form-group" class="text-start form-size">
-                <label for="exampleFormControlSelect1">Select rating</label>
-                <select
-                  style="width: 120px"
-                  class="form-control custom-select-size"
-                  id="exampleFormControlSelect1"
-                >
-                  <option>One star</option>
-                  <option>Two star</option>
-                  <option>Three star</option>
-                  <option>Four star</option>
-                  <option>Five star</option>
-                </select>
+              <div class="d-flex align-items-center">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Select rating</label>
+                  <div class="d-flex align-items-center">
+                    <select
+                      style="width: 120px; margin-right: 10px"
+                      class="form-control custom-select-size"
+                      id="exampleFormControlSelect1"
+                    >
+                      <option>1 ⭐</option>
+                      <option>2 ⭐</option>
+                      <option>3 ⭐</option>
+                      <option>4 ⭐</option>
+                      <option>5 ⭐</option>
+                      <option>6 ⭐</option>
+                      <option>7 ⭐</option>
+                      <option>8 ⭐</option>
+                      <option>8 ⭐</option>
+                      <option>10 ⭐</option>
+                    </select>
+                    <span>/ 10 ⭐</span>
+                  </div>
+                </div>
+
+                <div id="obrazekImage">
+                  <div class="mb-3">
+                    <label for="imageInput" class="form-label"
+                      >Choose an image</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="imageInput"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -413,17 +465,30 @@
               <div class="form-group my-3">
                 <label for="noteContent">Text</label>
                 <textarea
-                  style="max-height: 236px; width: 100%; height: 267px"
+                  style="max-height: 206px; width: 100%; height: 267px"
                   id="noteContent"
                   class="form-control"
                   style="height: 150px"
                   placeholder="Write the content of your note..."
                 ></textarea>
               </div>
+              <div id="obrazekImage">
+                <div class="mb-3">
+                  <label for="imageInput" class="form-label"
+                    >Choose an image</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                  />
+                </div>
+              </div>
             </div>
           </form>
 
-          <div class="tlacitka px-4 mt-4">
+          <div class="tlacitka px-4">
             <button class="btn btn-success notepad-btn">Submit</button>
             <a href="all_notepads.html">
               <button class="btn btn-light notepad-btn">See all</button>
@@ -432,6 +497,8 @@
         </div>
       </div>
     </section>
+
+    <div id="empty" style="height: 100px"></div>
 
     <section id="additionalPages" class="more">
       <img src="images/list 6 (1).svg" class="listek2" alt="" />
@@ -489,12 +556,12 @@
               <h5>Blogs</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="/blog.html" class="nav-link p-0 text-body-secondary"
                     >Create a new blog</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="/blog.html" class="nav-link p-0 text-body-secondary"
                     >See all blogs</a
                   >
                 </li>
@@ -505,7 +572,9 @@
               <h5>Notepads</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a
+                    href="#createNotepad"
+                    class="nav-link p-0 text-body-secondary"
                     >Create a new notepad</a
                   >
                 </li>
@@ -523,13 +592,24 @@
               <h5>School</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a
+                    href="/pomodoro.html"
+                    class="nav-link p-0 text-body-secondary"
                     >Pomodoro technique</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a
+                    href="/school.html"
+                    class="nav-link p-0 text-body-secondary"
                     >Flashcards</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="/blackSeries.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Black Series</a
                   >
                 </li>
               </ul>
@@ -539,12 +619,12 @@
               <h5>Want to add something or just feedback?</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a class="nav-link p-0 text-body-secondary"
                     >Email: pavelsmida16@seznam.cz</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a class="nav-link p-0 text-body-secondary"
                     >Discord: anywax</a
                   >
                 </li>

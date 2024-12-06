@@ -145,7 +145,7 @@ body {
 
 .tabulka {
   background-color: #6bcca3;
-  height: 600px;
+  height: 630px;
   width: 1100px;
   max-width: 90%;
   box-sizing: border-box;
@@ -730,5 +730,20 @@ footer div {
   width: 500px;
   top: -50px;
   left: 300px;
+  z-index: -1;
+}
+
+.arrow1 {
+  position: absolute;
+  top: 200px;
+  transform: rotate(90deg);
+  right: 180px;
+  z-index: -1;
+}
+
+.arrow2 {
+  position: absolute;
+  top: 450px;
+  left: 180px;
   z-index: -1;
 }
