@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Guard - School</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/logo.svg" style="padding-left: 10px" />
+        <a class="navbar-brand mx-2 lato-bold" href="index.html">Self Guard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <form class="d-flex">
+              <img src="images/magglass.svg" width="40" />
+              <input
+                class="form-control me-2 bg-black text-white searchInput"
+                type="search"
+                placeholder="Search"
+              />
+            </form>
+
+            <li class="nav-item active lato-regular d-flex align-items-center">
+              <img src="images/home.svg" class="icon" />
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item lato-regular d-flex align-items-center">
+              <img src="images/school.svg" class="icon" />
+              <a class="nav-link" href="school.html">School</a>
+            </li>
+
+            <li
+              class="nav-item lato-regular d-flex align-items-center"
+              style="margin-right: -16px"
+            >
+              <img src="images/blog.svg" class="icon" />
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <div class="dropdown d-flex align-items-center">
+              <img src="images/other.png" class="icon" height="20" />
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Other
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="all_notepads.html">Notepads</a>
+                </li>
+                <li><a class="dropdown-item" href="todo.html">To Do</a></li>
+                <li>
+                  <a class="dropdown-item" href="bucket.html">Bucket list</a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+
+          <a href="login.html">
+            <button class="btn btn-dark mx-4 px-5 lato-regular" type="submit">
+              Login
+            </button>
+          </a>
+        </div>
+      </nav>
+    </section>
+
+    <section id="schoolHeading" style="padding-top: 52px">
+      <div class="container text-center">
+        <h1 class="f-hall" style="font-size: 5rem">School</h1>
+        <p class="lato-regular opacity-50">
+          Tools for school and self-development
+        </p>
+        <hr style="width: 50%; margin: 0 auto; border-top: 2px solid black" />
+      </div>
+    </section>
+
+    <section id="schoolPage" style="height: 100vh">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="page p-5 text-white">
+          <!-- bg-danger (abych lepe videl)-->
+          <a href="pomodoro.html">
+            <div class="card p-4 bg-green shadow touch" style="width: 18rem">
+              <h1 class="text-center lato-bold">Pomodoro Technique</h1>
+              <svg
+                height="100"
+                viewBox="0 0 115 153"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.5329 1C45.3627 9.89083 47.8691 25.2937 34.5329 33.0165C21.1966 25.2937 23.7031 9.89083 34.5329 1ZM60.3163 37.3389C60.6048 48.1971 45.6653 53.8768 34.5329 51.2758C23.4004 53.8768 8.46098 48.2018 8.74946 37.3389C17.6025 30.9782 28.7018 36.237 34.5329 47.8519C40.3639 36.237 51.4633 30.9782 60.3163 37.3389ZM22.5917 62.3042C14.4055 59.1262 8.57448 55.0827 3.1454 55.13C-68.7852 55.7637 -61.5496 185.437 34.5329 185.437C130.615 185.437 137.856 55.7637 65.9251 55.13C60.4582 55.0827 54.6508 59.1025 46.474 62.3042C38.2831 65.5153 31.3076 65.6855 22.5917 62.3042Z"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <div>
+                <p class="card-text lato-regular">
+                  Pomodoro Technique is tracking 25 minutes to work, then 5
+                  minutes of break.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <div
+            class="card p-4 bg-green shadow touch velikost-x"
+            style="width: 18rem"
+          >
+            <h1 class="text-center lato-bold">Flashcards</h1>
+            <svg
+              height="150"
+              viewBox="0 0 507 507"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M295.75 126.75V42.25L84.5 147.875V443.625L211.25 380.25"
+                stroke="black"
+                stroke-width="4"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M211.25 169L422.5 63.375V359.125L211.25 464.75V169Z"
+                fill="#548E75"
+                stroke="black"
+                stroke-width="4"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="card-body">
+              <p class="card-text lato-regular">
+                Flashcards are cards with question on one side and the answer on
+                the other
+              </p>
+            </div>
+          </div>
+
+          <a href="blackSeries.html">
+            <div class="card p-4 bg-green shadow touch" style="width: 18rem">
+              <h1 class="text-center lato-bold">Black series</h1>
+              <svg
+                height="100"
+                viewBox="0 0 336 336"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M325.5 89.2513C325.5 89.2513 298.931 145.243 291.741 173.9C282.337 211.383 293.105 239.72 279.438 276.065C255.815 318.701 254.215 325.589 168.001 325.5C136.414 325.471 45.925 301.376 45.925 301.376C33.4491 298.169 10.5 300.059 10.5 286.124C10.5 272.191 26.8275 262.016 41.3241 261.983L98.4375 266.998C112.311 266.128 126.844 258.001 127.286 239.855C127.055 212.997 124.399 192.371 110.765 170.555L57.8255 87.9572C54.6637 81.3816 53.9116 70.1695 63.0643 65.1643C72.217 60.1584 82.616 67.599 86.1676 74.0775L145.302 154.514C151.614 160.391 162.849 161.523 161.891 149.015L135.78 29.3042C134.154 20.7992 138.471 10.5 148.314 10.5C161.234 10.5 169.18 15.4317 168.929 23.2398L197.64 141.354C199.885 147.103 207.842 146.335 209.982 141.033L218.16 26.1745C218.58 22.5107 223.359 16.1247 232.532 17.4556C241.704 18.7858 246.993 28.6118 246.022 32.4135L243.368 145.903C245.23 155.961 253.138 157.43 259.292 151.814L299.468 79.9634C301.909 73.9371 311.469 72.6817 317 75.0711C322.145 78.4225 325.501 82.9198 325.501 89.248L325.5 89.2513Z"
+                  fill="black"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text lato-regular">
+                  Black series is a game for giving better questions and for
+                  better working with schoolmates
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <div
+            class="card p-4 bg-green shadow touch velikost-x"
+            style="width: 18rem"
+          >
+            <h1 class="text-center lato-bold">Coming soon...</h1>
+            <div style="height: 200px"></div>
+            <div class="card-body">
+              <p class="card-text lato-regular">
+                This new feature is coming soon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Guard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="icon" href="images/images (9).jpg" />
+  </head>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-group,
+    .input-group {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/logo.svg" style="padding-left: 10px" />
+        <a class="navbar-brand mx-2 lato-bold" href="index.html">Self Guard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <form class="d-flex">
+              <img src="images/magglass.svg" width="40" />
+              <input
+                class="form-control me-2 bg-black text-white searchInput"
+                type="search"
+                placeholder="Search"
+              />
+            </form>
+
+            <li class="nav-item active lato-regular d-flex align-items-center">
+              <img src="images/home.svg" class="icon" />
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item lato-regular d-flex align-items-center">
+              <img src="images/school.svg" class="icon" />
+              <a class="nav-link" href="school.html">School</a>
+            </li>
+
+            <li
+              class="nav-item lato-regular d-flex align-items-center"
+              style="margin-right: -16px"
+            >
+              <img src="images/blog.svg" class="icon" />
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <div class="dropdown d-flex align-items-center">
+              <img src="images/other.png" class="icon" height="20" />
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Other
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="all_notepads.html">Notepads</a>
+                </li>
+                <li><a class="dropdown-item" href="todo.html">To Do</a></li>
+                <li>
+                  <a class="dropdown-item" href="bucket.html">Bucket list</a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+
+          <a href="login.html">
+            <button class="btn btn-dark mx-4 px-5 lato-regular" type="submit">
+              Login
+            </button>
+          </a>
+        </div>
+      </nav>
+    </section>
+
+    <section id="mainPage">
+      <div class="container lato-regular mpRel">
+        <div class="self-guard text-center">
+          <div>
+            <img class="imageSG" src="images/logo (2).svg" height="600px" />
+          </div>
+
+          <div class="fs-5">
+            <a href="#cards">
+              <button class="btn btn-success shadow btn-bigger fs-4">
+                Begin
+              </button>
+            </a>
+            <a href="#about">
+              <button class="btn btn-light shadow btn-bigger fs-4">
+                Explore
+              </button>
+            </a>
+
+            <p>Personal page dedicated to track your life.</p>
+          </div>
+        </div>
+
+        <div id="leaf1">
+          <img class="leaf" src="images/leaf.png" alt="" />
+        </div>
+
+        <div id="leaf2">
+          <img class="leaf2" src="images/leaf2.png" alt="" />
+        </div>
+
+        <div id="leaf3">
+          <img class="leaf3" src="images/leaf3.png" alt="" />
+        </div>
+
+        <div class="triangle">
+          <svg
+            viewBox="0 0 1920 544"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_f_28_1089)">
+              <path
+                d="M1919.5 4L3962.89 576.25H-123.887L1919.5 4Z"
+                fill="#548E75"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_28_1089"
+                x="-127.887"
+                y="0"
+                width="4094.77"
+                height="580.25"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="2"
+                  result="effect1_foregroundBlur_28_1089"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards" class="mt-5">
+      <img src="images/list 6 (4).svg" class="listek5" alt="" />
+      <div class="container px-4 py-5" id="featured-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col text-center">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+            >
+              <img src="images/ion_book-outline.svg" width="150" alt="" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis lato-black">Books</h3>
+            <p class="lato-regular">
+              You can write down books <a href="#createNotepad">here</a>
+            </p>
+          </div>
+
+          <div class="feature col text-center">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+            >
+              <img src="images/tdesign_film.svg" width="150" alt="" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis lato-black">Films</h3>
+            <p class="lato-regular">
+              You can write down films <a href="#createNotepad">here</a>
+            </p>
+          </div>
+          <div class="feature col text-center">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+            >
+              <img src="images/iconoir_gym.svg" width="150" alt="" />
+            </div>
+
+            <h3 class="fs-2 text-body-emphasis lato-black">Gym</h3>
+            <p class="lato-regular">
+              You can track down your progress <a href="#createNotepad">here</a>
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <!-- <p>Wanna se more of them? Definitely go check here.</p> -->
+          <svg
+            width="40"
+            height="94"
+            viewBox="0 0 94 94"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.7522 65.9057V48.9583H12.0518V45.0417H47.7522V28.0942L77.5032 47L47.7522 65.9057Z"
+              fill="black"
+            />
+          </svg>
+
+          <a href="all_notepads.html">see all</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <img src="images/list 6 (3).svg" class="listek4" />
+      <div class="container custom-padding bout">
+        <div class="bout2 flex rounded">
+          <div class="bout3 lato-regular">
+            <img src="images/logo test2.png" />
+          </div>
+
+          <div class="text-content">
+            <h1 class="f-hall fon-60">About</h1>
+            <p class="lato-regular test">
+              <b>Self-Guard</b> is website designed for self-improvement. Our
+              <b>main goal</b> is to help you track progress, rate films, write
+              out daily blogs... and much more! You can find here school tools
+              for more consistent learning like pomodoro technique and
+              flashcards. There is also To Do list and life-time Bucket list
+              system!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="nothing2"></div>
+
+    <section id="createNotepad">
+      <img src="images/list 6 (1).svg" class="listek3" alt="" />
+      <div class="container createNot">
+        <div class="f-hall fs-1">
+          <h1>Create a notepad</h1>
+        </div>
+        <div class="tabulka rounded">
+          <form action="index.html" class="form">
+            <!-- Select -->
+            <div class="form-group text-start form-size">
+              <label for="exampleFormControlSelect1">Select options</label>
+              <select class="form-control custom-select-size" id="options">
+                <option value="form4" selected>Example</option>
+                <option value="form1">Add book</option>
+                <!-- Default -->
+                <option value="form2">Add film</option>
+                <option value="form3" disabled>Add gym tracking</option>
+                <option value="disabled" disabled>Coming soon...</option>
+              </select>
+            </div>
+
+            <!-- Form 1: Add book -->
+            <div id="form1">
+              <div class="input-group my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Input name of the book..."
+                  aria-label="Book name"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Input author..."
+                  aria-label="Author name"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="form-group my-3">
+                <label for="review">Enter your review</label>
+                <textarea
+                  id="review"
+                  style="max-height: 146px; width: 100%; height: 267px"
+                  class="form-control"
+                  placeholder="Write your review..."
+                ></textarea>
+              </div>
+              <div class="form-group" class="text-start form-size">
+                <label for="exampleFormControlSelect1">Select rating</label>
+                <select
+                  style="width: 120px"
+                  class="form-control custom-select-size"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>One star</option>
+                  <option>Two star</option>
+                  <option>Three star</option>
+                  <option>Four star</option>
+                  <option>Five star</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Form 2: Add film -->
+            <div id="form2" class="hidden">
+              <div class="input-group my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Input name of the film..."
+                  aria-label="Book name"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Input author..."
+                  aria-label="Author name"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="form-group my-3">
+                <label for="review">Enter your review</label>
+                <textarea
+                  id="review"
+                  style="max-height: 146px; width: 100%; height: 267px"
+                  class="form-control"
+                  placeholder="Write your review..."
+                ></textarea>
+              </div>
+              <div class="form-group" class="text-start form-size">
+                <label for="exampleFormControlSelect1">Select rating</label>
+                <select
+                  style="width: 120px"
+                  class="form-control custom-select-size"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>One star</option>
+                  <option>Two star</option>
+                  <option>Three star</option>
+                  <option>Four star</option>
+                  <option>Five star</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Form 3: Add gym tracking -->
+            <div id="form3" class="hidden">
+              <p>Coming soon...</p>
+            </div>
+
+            <!-- Form 4: Example -->
+            <div id="form4" class="hidden">
+              <div class="form-group my-3">
+                <label for="noteTitle">Head Title</label>
+                <input
+                  id="noteTitle"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter the title of your note..."
+                />
+              </div>
+              <div class="form-group my-3">
+                <label for="noteContent">Text</label>
+                <textarea
+                  style="max-height: 236px; width: 100%; height: 267px"
+                  id="noteContent"
+                  class="form-control"
+                  style="height: 150px"
+                  placeholder="Write the content of your note..."
+                ></textarea>
+              </div>
+            </div>
+          </form>
+
+          <div class="tlacitka px-4 mt-4">
+            <button class="btn btn-success notepad-btn">Submit</button>
+            <a href="all_notepads.html">
+              <button class="btn btn-light notepad-btn">See all</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="additionalPages" class="more">
+      <img src="images/list 6 (1).svg" class="listek2" alt="" />
+      <div class="container aP">
+        <div class="text-center f-hall">
+          <h1 class="fon-60">Additional Pages</h1>
+          <p class="fs-4 opacity-25">Much more content here.</p>
+          <div class="containeraP center">
+            <!-- navrh jesti pridat <a> do celyho nebo pridat btn s odkazem-->
+            <a href="school.html">
+              <div
+                class="box zarovnani flex my-2 lato-bold flex-column p-3 rounded"
+                style="margin-right: 30px"
+              >
+                <div class="header-content">
+                  <h1>School</h1>
+                  <img src="images/Vector.svg" alt="" />
+                </div>
+                <p class="lato-regular">
+                  You can find there some tools to better educate yourself.
+                </p>
+              </div>
+            </a>
+
+            <a href="blog.html">
+              <div
+                class="box zarovnani flex my-2 lato-bold flex-column p-3 rounded"
+                style="margin-right: 30px"
+              >
+                <div class="header-content">
+                  <h1>Blog</h1>
+                  <img src="images/Vector (1).svg" alt="" />
+                </div>
+                <p class="lato-regular">
+                  You can find there some tools to better educate yourself.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="nothing"></div>
+
+    <!-- footer done -->
+    <section id="footer" style="background-color: #6bcca3">
+      <img src="images/list 6.svg" class="listek" />
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div style="height: 50px"></div>
+            <div style="height: 70px"></div>
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Blogs</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Create a new blog</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >See all blogs</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Notepads</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Create a new notepad</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="all_notepads.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >See all notepads</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>School</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Pomodoro technique</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Flashcards</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <h5>Want to add something or just feedback?</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Email: pavelsmida16@seznam.cz</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Discord: anywax</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top ftr"
+          >
+            <p>© 2024 developed with love</p>
+            <img src="images/heart.svg" alt="" />
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <img src="images/instagram.svg" height="24" />
+                <a
+                  href="https://www.instagram.com/pavel_smida31"
+                  target="_blank"
+                >
+                  pavel_smida31
+                </a>
+              </li>
+
+              <li class="ms-3">
+                <img src="images/github.svg" />
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://github.com/ArticFox93"
+                  >ArticFox93
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <section id="devOnly">
+      <div class="phone text-center f-hall">
+        <p>Hi, are you new? You should login!</p>
+        <svg
+          width="300"
+          height="300"
+          viewBox="0 0 300 300"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M215.625 0H84.375C68.9063 0 56.25 12.6563 56.25 28.125V271.875C56.25 287.344 68.9063 300 84.375 300H215.625C231.094 300 243.75 287.344 243.75 271.875V28.125C243.75 12.6563 231.094 0 215.625 0ZM112.5 14.0625H187.5V23.4375H112.5V14.0625ZM150 281.25C145.027 281.25 140.258 279.275 136.742 275.758C133.225 272.242 131.25 267.473 131.25 262.5C131.25 257.527 133.225 252.758 136.742 249.242C140.258 245.725 145.027 243.75 150 243.75C154.973 243.75 159.742 245.725 163.258 249.242C166.775 252.758 168.75 257.527 168.75 262.5C168.75 267.473 166.775 272.242 163.258 275.758C159.742 279.275 154.973 281.25 150 281.25ZM225 225H75V37.5H225V225Z"
+            fill="black"
+          />
+        </svg>
+        <a href="login.html">
+          <button class="btn btn-success devBtn">Login!</button>
+        </a>
+        <p class="sg">Welcome to the SG</p>
+      </div>
+    </section>
+
+    <script>
+      // Get references to DOM elements
+      const select = document.getElementById("options");
+      const forms = {
+        form1: document.getElementById("form1"),
+        form2: document.getElementById("form2"),
+        form3: document.getElementById("form3"),
+        form4: document.getElementById("form4"),
+      };
+
+      // Function to update visible form
+      const updateForms = (selectedForm) => {
+        Object.values(forms).forEach((form) => form.classList.add("hidden"));
+        if (forms[selectedForm]) {
+          forms[selectedForm].classList.remove("hidden");
+        }
+      };
+
+      // Default form on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        updateForms("form4"); // Set default form
+      });
+
+      // Add event listener to the select element
+      select.addEventListener("change", (event) => {
+        updateForms(event.target.value);
+      });
+    </script>
+  </body>
+</html>

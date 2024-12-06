@@ -1,0 +1,734 @@
+/* --------------------------------------------- MAIN WEBSITE --------------------------------------------- */
+
+body {
+  background-color: #84dcb7;
+  overflow-x: hidden;
+}
+
+.triangle {
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  width: 2500px;
+  left: -600px;
+}
+
+.btn-size {
+  height: 300px;
+}
+.ontop {
+  z-index: 6;
+}
+
+.btn-success {
+  background-color: #13da86;
+  color: black;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.btn-bigger {
+  width: 150px;
+  height: 50px;
+}
+
+.mpRel {
+  position: relative;
+  z-index: 6;
+  height: 1000px;
+}
+
+.self-guard {
+  position: absolute;
+  left: -200px;
+  z-index: 3;
+}
+
+.leaf {
+  position: absolute;
+  height: 900px;
+  z-index: 2;
+  right: -400px;
+}
+
+.leaf2 {
+  position: absolute;
+  height: 200px;
+  bottom: 80px;
+  left: -200px;
+  z-index: 2;
+}
+
+.leaf3 {
+  position: absolute;
+  z-index: 2;
+  height: 200px;
+  bottom: 320px;
+  left: 700px;
+}
+
+.listek5 {
+  position: absolute;
+  z-index: -1;
+  left: -100px;
+  height: 300px;
+}
+
+.nav-item {
+  width: 90px;
+}
+/* ---------------------- about ---------------------- */
+.bout {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bout2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #6bcca3;
+  width: 1000px;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bout3 {
+  background-color: #548e75;
+  height: 450px;
+  width: 300px;
+  padding: 20px;
+}
+
+.text-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.text-content h1,
+.text-content p {
+  margin: 0;
+}
+
+.listek4 {
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  height: 700px;
+}
+
+/* ---------------------- create a notepad ---------------------- */
+
+.createNot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 800px;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.createNot h1 {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+.tabulka {
+  background-color: #6bcca3;
+  height: 600px;
+  width: 1100px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.listek3 {
+  position: absolute;
+  z-index: -1;
+  right: -200px;
+  height: 700px;
+}
+
+/*---------------------- form css ----------------------*/
+.custom-select-size {
+  width: 300px;
+  height: 50px;
+}
+
+.custom-head-size {
+  width: 600px;
+  height: 50px;
+}
+
+.custom-message-size {
+  width: 600px;
+  height: 300px;
+  max-height: 500px !important;
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 20px;
+  align-content: space-around;
+  gap: 20px;
+}
+
+.tlacitka {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  gap: 20px;
+}
+
+.notepad-btn {
+  width: 100px;
+  height: 50px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------------------- additional pages ---------------------- */
+.aP {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.containeraP {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  height: 300px;
+  width: 100%;
+  max-width: 550px;
+  padding: 10px;
+  background-color: #548e75;
+}
+
+.zarovnani {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: start;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin-right: 15px;
+}
+
+.more {
+  height: 600px;
+}
+
+.listek2 {
+  position: absolute;
+  z-index: -1;
+  left: -300px;
+  height: 700px;
+}
+
+@media (max-width: 900px) {
+  .containeraP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #nothing {
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .bout2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #nothing2 {
+    height: 50px;
+  }
+}
+
+/* ---------------------- footer ---------------------- */
+.ftr {
+  background-color: #6bcca3;
+}
+
+.border-top {
+  border-top: var(--bs-border-width) var(--bs-border-style) #163611 !important;
+}
+
+.searchInput::placeholder {
+  color: white !important;
+}
+
+.fon-60 {
+  font-size: 60px;
+}
+
+.listek {
+  position: absolute;
+  z-index: -1;
+  right: 100px;
+}
+
+footer div {
+  z-index: 1;
+}
+
+/* --------------------------------------------- ALL NOTEPADS --------------------------------------------- */
+
+.add {
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.examples {
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------- TO DO LIST --------------------------------------------- */
+
+#column1 {
+  height: 800px;
+  width: 500px;
+  background-color: #6bcca3;
+}
+
+#column2 {
+  width: 500px;
+  background-color: red;
+}
+
+.divvv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.divvv2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.cely {
+  background-color: #56a383;
+}
+
+.cely2 {
+  background-color: #6bcca3;
+}
+
+.input-group2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.zarovnaniTextu {
+  text-align: left;
+}
+
+.testuju {
+  display: flex;
+  flex-direction: column;
+}
+/* dodelat */
+@media (max-width: 550px) {
+  .cely {
+    max-width: 400px !important;
+  }
+  .cely2 {
+    max-width: 400px !important;
+  }
+  #column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .zarovnaniTextu {
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------- SCHOOL PAGE --------------------------------------------- */
+#schoolPage {
+  padding-top: 56px;
+  height: 900px;
+}
+
+.page {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.bg-green {
+  background-color: #6bcca3;
+}
+
+.touch:hover {
+  background-color: #548e75;
+}
+
+.velikost-x {
+  height: 330px;
+}
+
+.skola {
+  background-color: #4b7c67;
+}
+
+/* -------------------------------- BUCKET LIST -------------------- */
+.pip1 {
+  /*background-color: #91a08f;*/
+  margin-right: 100px;
+  background-color: #6bcca3;
+  padding: 20px;
+  height: 700px;
+}
+
+.pip2 {
+  height: 700px;
+  width: 900px;
+  background-color: #6bcca3;
+}
+
+.empty {
+  height: 100px;
+}
+
+.inpt {
+  height: 200px;
+  width: 500px;
+}
+
+.pdng {
+  padding: 10px;
+}
+
+.kbelik {
+  position: absolute;
+  height: 300px;
+  left: -20px;
+  bottom: 10px;
+  z-index: -1;
+  transform: rotate(30deg);
+}
+
+.listBucket {
+  position: absolute;
+  left: 700px;
+  bottom: 200px;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .buckett {
+    display: flex;
+    flex-direction: column;
+  }
+  .pip2 {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dalsiArea {
+  overflow: auto;
+  width: 400px;
+  height: 200px;
+  max-height: 200px;
+  max-width: 400px;
+}
+
+@media (max-width: 990px) {
+  .buckett {
+    width: 600px;
+    flex-wrap: wrap;
+  }
+
+  .dalsiArea {
+    max-width: 300px;
+    max-height: 100px;
+  }
+
+  .pip2 {
+    width: 600px;
+  }
+
+  .empty {
+    height: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .pip2 {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cotoje {
+    width: 300px;
+  }
+  .pip2 {
+    width: 360px;
+  }
+
+  .empty {
+    height: 10px;
+  }
+}
+
+.barvicka {
+  background-color: #6bcca3;
+}
+
+/* -------------------------------- DEV ONLY -------------------- */
+.phone {
+  position: fixed;
+  height: 50px;
+  bottom: 50px;
+  z-index: 99;
+  right: 20px;
+  transition: height 0.3s ease-in-out;
+}
+
+.phone:hover {
+  height: 300px;
+}
+
+.devBtn {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  width: 100px;
+}
+
+.sg {
+  position: absolute;
+  right: 75px;
+  bottom: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.phone:hover .sg {
+  opacity: 1;
+}
+
+.phone:hover .devBtn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (max-width: 1000px) {
+  .phone {
+    display: none;
+  }
+}
+
+/* -------------------------------- BLOG -------------------- */
+
+.blog {
+  height: 500px;
+  width: 400px;
+  background-color: #6bcca3;
+}
+
+.blog-text {
+  height: 200px;
+  width: 900px;
+}
+
+.red-leaf {
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  z-index: -1;
+}
+
+.red-leaf2 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: -1;
+}
+
+.pravy-margin {
+  margin-right: 20px;
+}
+
+.dulezity {
+  width: 100px !important;
+}
+
+.flexibilni {
+  display: flex;
+}
+
+@media (max-width: 1400px) {
+  .flexibilni {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #calendar {
+    width: 300px;
+  }
+
+  #inputy {
+    width: 500px;
+  }
+
+  .txtAre {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  #inputy {
+    width: 300px;
+  }
+
+  .txtAre {
+    width: 300px !important;
+  }
+}
+
+.txtAre {
+  overflow: auto;
+}
+/* -------------------------------- POMODORO -------------------- */
+
+.btnPomodoro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnP {
+  height: 70px;
+  width: 160px;
+  font-size: 20px;
+}
+
+#spacer {
+  height: 120px;
+}
+
+.cas {
+  font-size: 250px;
+}
+
+@media (max-width: 990px) {
+  .cas {
+    font-size: 200px;
+  }
+  #spacer {
+    height: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .cas {
+    font-size: 100px;
+  }
+  #spacer {
+    height: 0px;
+  }
+}
+
+/* -------------------------------- BLACK SERIES -------------------- */
+
+.seriesFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutSeries1 {
+  padding: 10px;
+  background-color: #6bcca3;
+  max-width: 40ch;
+}
+
+.aboutSeries2 {
+  max-width: 40ch;
+  padding: 10px;
+  background-color: #6bcca3;
+}
+
+@media (max-width: 900px) {
+  .seriesFlex {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.ruka {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  top: 80px;
+  right: 580px;
+  z-index: -1;
+  opacity: 40%;
+}
+
+.ruka2 {
+  position: absolute;
+  height: 600px;
+  width: 500px;
+  top: -50px;
+  left: 300px;
+  z-index: -1;
+}

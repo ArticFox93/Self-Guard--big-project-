@@ -1,0 +1,34 @@
+#about {
+    background-color: #84e0a2; /* Světle zelené pozadí sekce */
+    padding: 40px;
+  }
+  
+  .bout2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .dark-box {
+    width: 150px; /* Nastavte podle požadované velikosti */
+    height: 150px; /* Nastavte podle požadované velikosti */
+    background-color: #3a6a56; /* Tmavě zelená barva */
+    border-radius: 10px; /* Mírně zaoblené rohy */
+  }
+  
+  .text-content {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Styl písma podobný tomu z obrázku */
+    color: #000; /* Černá barva textu */
+  }
+  
+  .text-content h1 {
+    font-size: 2em; /* Nastavte podle potřeby */
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  
+/*
+
+
+*/

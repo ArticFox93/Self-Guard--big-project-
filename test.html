@@ -1,0 +1,138 @@
+<section id="createNotepad">
+  <img src="images/list 6 (1).svg" class="listek3" alt="" />
+  <div class="container createNot">
+    <div class="f-hall fs-1">
+      <h1>Create a notepad</h1>
+    </div>
+    <div class="tabulka rounded">
+      <form action="index.html" class="form">
+        <!-- Select -->
+        <div class="form-group text-start form-size">
+          <label for="exampleFormControlSelect1">Select options</label>
+          <select class="form-control custom-select-size" id="options">
+            <option value="default" selected>-- Choose an option --</option>
+            <option value="form1">Add book</option>
+            <option value="form2">Add film</option>
+            <option value="form3">Add gym tracking</option>
+            <option value="form4">Add note</option>
+            <option value="disabled" disabled>Coming soon...</option>
+          </select>
+        </div>
+
+        <!-- Form 1: Add book -->
+        <div id="form1" class="hidden">
+          <h3>Add a Book</h3>
+          <div class="input-group my-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Input name of the book..."
+              aria-label="Book name"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group my-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Input author..."
+              aria-label="Author name"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="form-group my-3">
+            <label for="review">Enter your review</label>
+            <textarea
+              id="review"
+              style="height: 200px; width: 100%"
+              class="form-control"
+              placeholder="Write your review..."
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Form 2: Add film -->
+        <div id="form2" class="hidden">
+          <h3>Add a Film</h3>
+          <div class="input-group my-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Input name of the film..."
+              aria-label="Film name"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+
+        <!-- Form 3: Add gym tracking -->
+        <div id="form3" class="hidden">
+          <h3>Add Gym Tracking</h3>
+          <p>Coming soon...</p>
+        </div>
+
+        <!-- Form 4: Add note -->
+        <div id="form4" class="hidden">
+          <h3>Add a Note</h3>
+          <div class="form-group my-3">
+            <label for="noteTitle">Note Title</label>
+            <input
+              id="noteTitle"
+              type="text"
+              class="form-control"
+              placeholder="Enter the title of your note..."
+            />
+          </div>
+          <div class="form-group my-3">
+            <label for="noteContent">Note Content</label>
+            <textarea
+              id="noteContent"
+              class="form-control"
+              style="height: 150px"
+              placeholder="Write the content of your note..."
+            ></textarea>
+          </div>
+        </div>
+      </form>
+
+      <div class="tlacitka px-4 mt-4">
+        <button class="btn btn-success notepad-btn">Submit</button>
+        <a href="all_notepads.html">
+          <button class="btn btn-light notepad-btn">See all</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Get references to DOM elements
+  const select = document.getElementById("options");
+  const forms = {
+    form1: document.getElementById("form1"),
+    form2: document.getElementById("form2"),
+    form3: document.getElementById("form3"),
+    form4: document.getElementById("form4"), // Added new form
+  };
+
+  // Add event listener to the select element
+  select.addEventListener("change", (event) => {
+    const value = event.target.value;
+
+    // Hide all forms
+    Object.values(forms).forEach((form) => {
+      form.classList.add("hidden");
+    });
+
+    // Show the selected form, if applicable
+    if (forms[value]) {
+      forms[value].classList.remove("hidden");
+    }
+  });
+</script>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Guard - Black Series</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/logo.svg" style="padding-left: 10px" />
+        <a class="navbar-brand mx-2 lato-bold" href="index.html">Self Guard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <form class="d-flex">
+              <img src="images/magglass.svg" width="40" />
+              <input
+                class="form-control me-2 bg-black text-white searchInput"
+                type="search"
+                placeholder="Search"
+              />
+            </form>
+
+            <li class="nav-item active lato-regular d-flex align-items-center">
+              <img src="images/home.svg" class="icon" />
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item lato-regular d-flex align-items-center">
+              <img src="images/school.svg" class="icon" />
+              <a class="nav-link" href="school.html">School</a>
+            </li>
+
+            <li
+              class="nav-item lato-regular d-flex align-items-center"
+              style="margin-right: -16px"
+            >
+              <img src="images/blog.svg" class="icon" />
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <div class="dropdown d-flex align-items-center">
+              <img src="images/other.png" class="icon" height="20" />
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Other
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="all_notepads.html">Notepads</a>
+                </li>
+                <li><a class="dropdown-item" href="todo.html">To Do</a></li>
+                <li>
+                  <a class="dropdown-item" href="bucket.html">Bucket list</a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+
+          <a href="login.html">
+            <button class="btn btn-dark mx-4 px-5 lato-regular" type="submit">
+              Login
+            </button>
+          </a>
+        </div>
+      </nav>
+    </section>
+
+    <section id="aboutSeries" style="padding-top: 56px">
+      <div class="container seriesFlex">
+        <div class="aboutSeries1 rounded-bottom shadow">
+          <h1 class="f-hall">Black Series</h1>
+          <p class="lato-regular opacity-50">
+            Black Stories is a logical, mystery-filled, and collaborative party
+            game. It features cases like murders, accidents, suicides, and
+            bizarre scenarios. You’ll only know a small, often drastic part of
+            the story, and your goal is to uncover what happened. Ready to
+            become an investigator? The game is for 2 to 10+ players with no
+            limits. It helps you develop critical thinking and sharp questioning
+            skills.
+          </p>
+        </div>
+        <div class="aboutSeries2 rounded shadow">
+          <h3 class="f-hall">How to play?</h3>
+          <p class="lato-regular opacity-50">
+            One player of them is choosen as
+            <b>"Narrator"</b>. Narrator knows full story. The other players act
+            as <b>detectives</b>, asking <b>ONLY yes or no</b> questions to
+            uncover the truth behind the mystery. behind.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="ruka">
+      <svg viewBox="0 0 159 159" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M87.4499 67.5749V21.8624C87.4499 20.281 86.8217 18.7645 85.7035 17.6463C84.5853 16.5281 83.0687 15.8999 81.4874 15.8999C79.906 15.8999 78.3894 16.5281 77.2712 17.6463C76.1531 18.7645 75.5249 20.281 75.5249 21.8624V67.5749C75.5249 68.6291 75.1061 69.6402 74.3606 70.3857C73.6152 71.1311 72.6041 71.5499 71.5499 71.5499C70.4956 71.5499 69.4846 71.1311 68.7391 70.3857C67.9937 69.6402 67.5749 68.6291 67.5749 67.5749V29.8124C67.5749 28.231 66.9467 26.7145 65.8285 25.5963C64.7103 24.4781 63.1937 23.8499 61.6124 23.8499C60.031 23.8499 58.5144 24.4781 57.3962 25.5963C56.2781 26.7145 55.6499 28.231 55.6499 29.8124V81.4874C50.387 78.1007 44.5835 75.5249 39.7499 75.5249C32.0304 75.5249 25.5432 78.1007 23.9771 84.3971C23.8886 84.7722 23.8459 85.1566 23.8499 85.5419C23.8499 86.7344 24.4064 87.8633 25.3683 88.5788L35.7987 96.4095C44.2496 102.738 52.2075 111.236 57.7566 120.164C60.7122 125.019 63.5042 129.972 66.128 135.015C68.99 140.405 70.8026 143.1 79.4999 143.1H103.716C111.3 143.1 114.186 138.863 119.25 127.2C124.314 115.537 127.2 103.795 127.2 99.3749V41.7374C127.2 40.156 126.572 38.6395 125.453 37.5213C124.335 36.4031 122.819 35.7749 121.237 35.7749C119.656 35.7749 118.139 36.4031 117.021 37.5213C115.903 38.6395 115.275 40.156 115.275 41.7374V71.5499C115.275 72.6041 114.856 73.6152 114.111 74.3607C113.365 75.1061 112.354 75.5249 111.3 75.5249C110.246 75.5249 109.235 75.1061 108.489 74.3607C107.744 73.6152 107.325 72.6041 107.325 71.5499V29.8124C107.325 28.231 106.697 26.7145 105.578 25.5963C104.46 24.4781 102.944 23.8499 101.362 23.8499C99.781 23.8499 98.2644 24.4781 97.1462 25.5963C96.0281 26.7145 95.3999 28.231 95.3999 29.8124V67.5749C95.3999 68.6291 94.9811 69.6402 94.2356 70.3857C93.4902 71.1311 92.4791 71.5499 91.4249 71.5499C90.3706 71.5499 89.3596 71.1311 88.6141 70.3857C87.8687 69.6402 87.4499 68.6291 87.4499 67.5749Z"
+          fill="#548E75"
+        />
+      </svg>
+    </div>
+    <div class="ruka2">
+      <svg viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M23.0658 73.1043C22.3936 73.4405 21.6995 73.4623 20.9836 73.1699C20.2677 72.8775 19.7854 72.3935 19.5367 71.7179L15.7554 61.6346C15.3353 60.4582 15.1471 59.3036 15.1907 58.1709C15.2344 57.0382 15.7588 56.2601 16.7637 55.8366C18.8644 54.9964 20.8189 55.2905 22.6272 56.7189C24.4355 58.1474 25.8001 59.996 26.721 62.2648L28.7377 67.6846C28.9898 68.3568 29.0116 68.9668 28.8032 69.5147C28.5949 70.0625 28.1949 70.5028 27.6033 70.8356L23.0658 73.1043ZM54.5762 110.917C53.1478 110.917 51.7411 110.623 50.3564 110.035C48.9716 109.446 47.8154 108.606 46.8877 107.514L26.469 83.9439C25.5446 82.8516 25.1245 81.6332 25.2085 80.2887C25.2926 78.9443 25.8808 77.8099 26.9731 76.8856C28.0655 75.9613 29.2839 75.563 30.6283 75.6907C31.9728 75.8184 33.1071 76.3848 34.0315 77.3898L45.3752 90.3721C45.3752 89.6998 45.4592 89.0495 45.6273 88.4209C45.7953 87.7924 46.0474 87.1403 46.3835 86.4648L40.5856 69.8273C40.1655 68.4828 40.2495 67.1804 40.8377 65.92C41.4259 64.6596 42.3922 63.8193 43.7367 63.3991C45.0811 62.979 46.3835 63.063 47.644 63.6512C48.9044 64.2394 49.7446 65.2057 50.1648 66.5502L55.0804 80.6668H57.9794V65.5418C57.9794 64.1134 58.4634 62.9168 59.4314 61.9522C60.3994 60.9875 61.5959 60.5035 63.021 60.5002C64.4462 60.4968 65.6444 60.9808 66.6158 61.9522C67.5871 62.9235 68.0694 64.1201 68.0627 65.5418V80.6668H71.0877L73.7346 69.4491C74.0707 68.0207 74.8068 66.9485 75.9428 66.2326C77.0789 65.5166 78.3595 65.3284 79.7846 65.6679C81.2097 66.0074 82.2819 66.7434 83.0012 67.8761C83.7204 69.0088 83.9087 70.2894 83.5658 71.7179L81.5492 80.6668C81.9693 80.7509 82.4113 80.8349 82.8751 80.9189C83.339 81.003 83.7793 81.129 84.196 81.2971L86.0867 76.3814C86.5908 75.037 87.4731 74.0707 88.7335 73.4825C89.994 72.8943 91.2964 72.8523 92.6408 73.3564C93.9013 73.8606 94.8037 74.7429 95.3482 76.0033C95.8927 77.2637 95.9146 78.5662 95.4137 79.9106L90.7502 92.2627V100.834C90.7502 103.606 89.762 105.981 87.7857 107.957C85.8094 109.934 83.4364 110.92 80.6669 110.917H54.5762ZM39.1992 32.8971C38.5269 32.9811 37.9169 32.7929 37.369 32.3324C36.8212 31.8719 36.5069 31.3039 36.4262 30.6283L35.2919 20.671C35.1238 19.2425 35.4818 18.004 36.3657 16.9553C37.2497 15.9066 38.4043 15.2966 39.8294 15.1252C41.2545 14.9538 42.4947 15.3117 43.5501 16.1991C44.6055 17.0864 45.2139 18.2409 45.3752 19.6627L46.3835 29.62C46.4676 30.2922 46.2793 30.9022 45.8189 31.4501C45.3584 31.998 44.7904 32.3122 44.1148 32.3929L39.1992 32.8971ZM41.9721 58.6096C41.2158 58.7776 40.5234 58.6516 39.8949 58.2314C39.2664 57.8113 38.9084 57.2231 38.821 56.4668L37.3085 43.3585C37.1405 41.93 37.4984 40.6915 38.3824 39.6428C39.2664 38.5941 40.4209 37.9841 41.846 37.8127C43.2711 37.6413 44.5114 37.9992 45.5668 38.8866C46.6222 39.7739 47.2305 40.9284 47.3919 42.3502L48.7783 54.5762C48.8624 55.2484 48.7363 55.8366 48.4002 56.3408C48.0641 56.845 47.5599 57.1811 46.8877 57.3491L41.9721 58.6096ZM60.5002 55.4585C59.828 55.4585 59.2398 55.2064 58.7356 54.7023C58.2315 54.1981 57.9794 53.6099 57.9794 52.9377V40.3335C57.9794 38.905 58.4634 37.7085 59.4314 36.7438C60.3994 35.7792 61.5959 35.2952 63.021 35.2918C64.4462 35.2885 65.6444 35.7725 66.6158 36.7438C67.5871 37.7152 68.0694 38.9118 68.0627 40.3335V52.9377C68.0627 53.6099 67.8106 54.1981 67.3065 54.7023C66.8023 55.2064 66.2141 55.4585 65.5419 55.4585H60.5002ZM60.5002 30.2502C59.828 30.2502 59.2398 29.9981 58.7356 29.4939C58.2315 28.9898 57.9794 28.4016 57.9794 27.7293V15.1252C57.9794 13.6967 58.4634 12.5002 59.4314 11.5355C60.3994 10.5709 61.5959 10.0869 63.021 10.0835C64.4462 10.0802 65.6444 10.5642 66.6158 11.5355C67.5871 12.5069 68.0694 13.7034 68.0627 15.1252V27.7293C68.0627 28.4016 67.8106 28.9898 67.3065 29.4939C66.8023 29.9981 66.2141 30.2502 65.5419 30.2502H60.5002ZM82.5575 61.2564L77.5158 59.996C76.8436 59.828 76.3394 59.4918 76.0033 58.9877C75.6672 58.4835 75.5412 57.8953 75.6252 57.2231L77.0117 44.871C77.1797 43.4425 77.7898 42.288 78.8418 41.4074C79.8938 40.5268 81.1324 40.1688 82.5575 40.3335C83.9826 40.4982 85.1388 41.1082 86.0262 42.1636C86.9135 43.219 87.2698 44.4576 87.095 45.8793L85.7085 59.1137C85.6245 59.87 85.2682 60.4582 84.6397 60.8783C84.0112 61.2984 83.3171 61.4245 82.5575 61.2564ZM85.4565 35.9221L80.4148 35.4179C79.7426 35.3339 79.1762 35.0179 78.7157 34.4701C78.2553 33.9222 78.0654 33.3138 78.146 32.645L79.1544 22.6877C79.3224 21.2592 79.9325 20.1047 80.9845 19.2241C82.0365 18.3434 83.2751 17.9855 84.7002 18.1502C86.1253 18.3149 87.2815 18.9249 88.1689 19.9803C89.0562 21.0357 89.4125 22.2743 89.2377 23.696L88.2294 33.6533C88.1453 34.3255 87.8311 34.8936 87.2866 35.3574C86.7421 35.8212 86.132 36.0094 85.4565 35.9221ZM95.5398 69.3231L90.6242 67.8106C89.9519 67.6425 89.4679 67.2644 89.1722 66.6762C88.8764 66.088 88.8142 65.4578 88.9856 64.7856L90.8762 57.7273C91.2964 56.3828 92.0947 55.3543 93.271 54.6418C94.4474 53.9292 95.7078 53.7813 97.0523 54.1981C98.3967 54.6149 99.4051 55.3913 100.077 56.5273C100.75 57.6634 100.918 58.9037 100.581 60.2481L98.6908 67.5585C98.5228 68.2307 98.1228 68.7349 97.4909 69.071C96.859 69.4071 96.2087 69.4912 95.5398 69.3231ZM100.834 50.2908L95.9179 49.0304C95.2457 48.8623 94.7415 48.4624 94.4054 47.8305C94.0693 47.1986 93.9853 46.5482 94.1533 45.8793L95.7919 40.0814C96.3801 38.0648 97.0943 36.1741 97.9346 34.4096C98.7749 32.645 100.077 31.9727 101.842 32.3929C103.943 32.8971 105.203 34.2835 105.623 36.5523C106.043 38.821 105.917 41.1738 105.245 43.6106L103.859 48.5262C103.69 49.1984 103.312 49.7026 102.724 50.0387C102.136 50.3748 101.506 50.4589 100.834 50.2908Z"
+          fill="#548E75"
+        />
+      </svg>
+    </div>
+
+    <section id="seriesPart">
+      <div style="height: 30px"></div>
+      <div
+        class="container text-center rounded shadow"
+        style="max-width: 60ch; background-color: #6bcca3"
+      >
+        <h1>The case is:</h1>
+        <br />
+        <h2>
+          In a field lies a dead body, holding a broken matchstick in its hand.
+        </h2>
+        <hr />
+        <a href="">click to see solution (NARRATOR ONLY)</a>
+        <h3 class="opacity-50" style="display: none">
+          A group of people was flying in a hot air balloon and ran out of
+          ballast. They decided to draw lots to see who would have to jump out.
+          The dead body is the one who lost.
+        </h3>
+        <br />
+        <button class="btn btn-success">reroll</button>
+      </div>
+    </section>
+  </body>
+</html>
